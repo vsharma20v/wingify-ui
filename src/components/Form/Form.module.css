@@ -1,0 +1,109 @@
+.form-container {
+  padding: 2rem;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.form-heading {
+  margin: 0rem auto;
+  font-size: 1.4rem;
+}
+
+.email-container,
+.dob-container,
+.password-container,
+.identity-container {
+  margin: 1.4rem 0rem;
+}
+
+.email-container,
+.password-container {
+  position: relative;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 0.2rem;
+  outline: none;
+  border: 1.5px solid var(--light-gray);
+  transition: all 0.2s;
+}
+
+input[type="email"].error,
+input[type="password"].error {
+  border-color: var(--red);
+}
+
+select {
+  padding: 0.2rem;
+  outline: none;
+  width: 100%;
+  border: 1.5px solid var(--light-gray);
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin: 0.2rem 0rem;
+  font-size: 0.9rem;
+}
+
+.dob-container > label {
+  margin: 0.2rem 0rem 0rem;
+}
+
+.dob-input-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.4rem;
+}
+
+.dob-input-container label {
+  font-weight: 400;
+  color: var(--gray);
+  margin: 0rem;
+}
+
+.identity-radio-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.8rem;
+  width: 60%;
+}
+.identity-radio-container > div {
+  display: inline-flex;
+  align-items: center;
+}
+
+.identity-radio-container input[type="radio"] {
+  margin: 0rem;
+  cursor: pointer;
+}
+
+.identity-radio-container label {
+  display: initial;
+  margin: 0rem 0.4rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.form-submit-btn {
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 44rem) {
+  .form-container {
+    padding: 2rem 2.5rem;
+  }
+}

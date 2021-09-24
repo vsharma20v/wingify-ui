@@ -1,0 +1,30 @@
+.tooltip {
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0rem 0.4rem;
+  width: 40%;
+  position: absolute;
+  left: 102%;
+  top: 40%;
+  transition: all 0.2s;
+}
+
+.tooltip::before {
+  content: "🞀";
+  color: var(--red);
+  position: absolute;
+  left: -6px;
+}
+
+@media screen and (max-width: 55rem) {
+  .tooltip {
+    left: 0rem;
+    width: max-content;
+    top: 104%;
+    padding: 0rem 0.4rem;
+  }
+  .tooltip::before {
+    display: none;
+  }
+}

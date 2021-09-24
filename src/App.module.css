@@ -1,0 +1,14 @@
+.main-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url("./assets/bg-curve.svg") top/contain no-repeat;
+}
+
+@media screen and (max-width: 44rem) {
+  .main-container {
+    background: none;
+  }
+}
